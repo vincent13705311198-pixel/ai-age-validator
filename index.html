@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="输入年龄，查看是否通过年龄验证。">
+  <title>年龄验证器（Age Validator）</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="validator-card">
+    <h1>年龄验证器</h1>
+    <p class="description">请输入整数年龄（18 至 65 岁）。</p>
+
+    <form id="age-form" novalidate>
+      <label for="age-input">年龄</label>
+      <input
+        id="age-input"
+        name="age"
+        type="text"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="例如：25"
+        aria-describedby="result"
+      >
+      <button type="submit">验证年龄</button>
+    </form>
+
+    <p id="result" class="result" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

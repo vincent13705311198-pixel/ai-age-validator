@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.validator-card {
+  width: min(100%, 420px);
+  padding: 32px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgb(15 23 42 / 10%);
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.description {
+  margin: 12px 0 24px;
+  color: #64748b;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input,
+button {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+}
+
+input:focus,
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+button {
+  margin-top: 16px;
+  border: 0;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.result {
+  min-height: 1.5em;
+  margin: 20px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .validator-card {
+    padding: 24px;
+  }
+}
